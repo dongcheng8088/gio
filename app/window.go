@@ -764,7 +764,7 @@ func (w *Window) init() {
 	// Measure decoration height.
 	deco := new(widget.Decorations)
 	theme := material.NewTheme()
-	theme.Shaper = text.NewShaper(text.NoSystemFonts(), text.WithCollection(gofont.Regular()))
+	theme.Shaper = text.NewShaper(text.WithCollection(gofont.Regular()))
 	decoStyle := material.Decorations(theme, deco, 0, "")
 	gtx := layout.Context{
 		Ops: new(op.Ops),
